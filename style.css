@@ -32,12 +32,21 @@ header {
     font-size: 24px;
 
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 header img {
     height: 45px;
     width: auto;
+}
+nav {
+    display: flex;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+    padding: 6px;
 }
 .our-logo { 
     gap: 12px;

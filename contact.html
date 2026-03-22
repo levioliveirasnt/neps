@@ -8,10 +8,14 @@
     </head> 
     <body>
         <header>
-            <a href="index.html">
-                <span>CodeToCommunity</span>
-                <img src="images/logo.png">
-            </a>
+            <nav>
+                <a href="index.html">
+                <div class="our-logo">
+                    <ul><li>CodeToCommunity</li></ul>
+                    <img src="images/logo.png">
+                </div>
+                </a>
+            </nav>
         </header>
         <main>
             <div class = "participants">
@@ -23,6 +27,21 @@
                             <li>Uma iniciativa que visa democratizar a participacao nas olimpiadas</li>
                             <li>Somos engajados e apaixonados</li>
                         </ul>
+                    <section>
+                    <h2>Contato</h2>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem"></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                    </section>
                 </div>
             </div>
         </main>
