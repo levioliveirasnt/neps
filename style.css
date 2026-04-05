@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+    font-size: 16px; /* base */
+}
+
 html, body {
     height: 100%;
     margin: 0;
 }
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
@@ -15,13 +21,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 main {
     flex:1;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 nav {
     height: auto;
 
@@ -36,46 +45,51 @@ nav {
     justify-content: flex-start;
     align-items: center;
 }
+
 nav ul {
     display: flex;
     padding: 1rem;
     gap: 3rem;
 }
+
 header img {
-    height: 45px;
+    height: 2.8rem; /* 45px */
     width: auto;
 }
+
 .our-logo { 
     gap: 1rem;
-    padding: 0 20px;
+    padding: 0 1.25rem; /* 20px */
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
+
 footer {
     background-color: #d8d5d5;
     color: #333;
     text-align: center;
-    padding: 2px;
-    font-size: 20px;
+    padding: 0.125rem; /* 2px */
+    font-size: 1.25rem; /* 20px */
 }
+
 .olimpiadas {    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .olimpiada {
-    height: 300px;
-    width: 200px;   
-    padding: 10px;
-    margin: 15px;
+    height: 18.75rem; /* 300px */
+    width: 12.5rem;   /* 200px */ 
+    padding: 0.625rem; /* 10px */
+    margin: 0.9375rem; /* 15px */
 
     border-style: solid;
-    border-width: 4px;
-    border-radius: 16px;
+    border-width: 0.25rem; /* 4px */
+    border-radius: 1rem; /* 16px */
     border-color: #347923;
-
 
     background-color: #ffffff;
 
@@ -84,39 +98,102 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .olimpiada-imagem {
-    height: 150px;
-    width: 150px;
+    height: 9.375rem; /* 150px */
+    width: 9.375rem;
 }
+
 .olimpiada-texto{
     text-align: center;
     color: #333;
 }
+
 .participants, .card {
     width: 100%;
-    margin-top: 100px;
-    
+    margin-top: 6.25rem; /* 100px */
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.who, .obi {
-    border:#347923 12px solid;
-    border-radius: 12px;
 
-    margin-bottom: 100px;
-    padding: 12px;
-    gap: 20px;
+.who, .obi {
+    border:#347923 0.75rem solid; /* 12px */
+    border-radius: 0.75rem;
+
+    margin-bottom: 6.25rem; /* 100px */
+    padding: 0.75rem;
+    gap: 1.25rem; /* 20px */
 
     display: flex;
 }
-.who img, .obi img {
-    width: 300px;
-    height: auto;
 
+.who img, .obi img {
+    width: 18.75rem; /* 300px */
+    height: auto;
 }
+
 .data {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+.contact-form {
+    width: 100%;
+    max-width: 30rem;
+    
+    margin: 3rem auto;
+    padding: 1.5rem;
+
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+
+    border: 0.125rem solid #ccc;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    resize: none;
+
+    transition: border 0.2s ease;
+}
+
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #347923;
+}
+
+.submit-button {
+    padding: 0.75rem;
+    
+    background-color: #347923;
+    color: white;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #2c661d;
 }
